@@ -4,9 +4,13 @@
 (defn comp-func [a b] (if (nil? a) false (= 32 (Math/abs (- (int a) (int b))))))
 (defn comp-func2 [a b] (if (or (= (- (int a) (int b)) 0) (= (- (int a) (int b)) 32)) true false))
 
+
+;peek 과 last 의 시간차이는 엄청나다. (For a list or queue, same as first, for a vector, same as, but much
+;more efficient than, last. If the collection is empty, returns nil.)
+
 (defn react [x]
   (reduce (fn [acc v]
-            (if (comp-func (last acc) v)
+            (if (comp-func (peek acc) v)
               (pop acc)
               (conj acc v)))
           [] x))
