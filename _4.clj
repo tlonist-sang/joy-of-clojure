@@ -1,4 +1,4 @@
-(ns aoc2018-4-answers)
+(ns _4)
 
 (defn separate [x] (map (fn [y] [(subs y 6 17) (subs y 19)]) x))
 (defn create-schedule [x]

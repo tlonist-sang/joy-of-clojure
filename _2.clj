@@ -1,4 +1,4 @@
-(ns aoc2018-2-answers)
+(ns _2)
 
 ;2-1
 ; string으로 이루어진 vector x에서, 각 string의 character의 빈도수를 기록하는 array 리턴

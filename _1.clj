@@ -1,4 +1,4 @@
-(ns aoc2018_1_answers)
+(ns _1)
 ;aoc2018-1
 (map (fn [x] (+ x 2)) [1 2 3])                              ; => (3 4 5)
 (reduce (fn [acc x] (+ acc x)) [1 2 3 4 5])                 ; => 15, acc에 값이 축적

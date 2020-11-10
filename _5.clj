@@ -1,4 +1,4 @@
-(ns aoc2018-5-answers)
+(ns _5)
 
 
 (defn comp-func [a b] (if (nil? a) false (= 32 (Math/abs (- (int a) (int b))))))

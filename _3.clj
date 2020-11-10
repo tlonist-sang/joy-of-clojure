@@ -1,4 +1,4 @@
-(ns aoc2018_3_answers)
+(ns _3)
 
 ; On how to use map (using %)
 (defn add-x-to-each [ints x] (map #(+ % x) ints))
