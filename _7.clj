@@ -154,11 +154,6 @@
                           :num_worker (count (keys newStatus))}))
 
 
-
-
-
-;(prn "newRaw" newRaw)))
-
 (defn step-nth [x] (loop [input x]
                      (when (> (count (keys (input :raw))) (count (input :checked)))
                        (recur (step-forward input)))))
