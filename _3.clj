@@ -122,8 +122,6 @@
      (filter-coords)
      (count))
 
-
-
 (->> (slurp "/Users/tlonist/Documents/study/joc/src/3.txt")
      (clojure.string/split-lines)
      (parse1)
@@ -141,11 +139,3 @@
      (flatten)
      (set)
      (test-include))
-;(get-p-2))
-;(keys)
-;(frequencies))
-;(map into []))
-;(filter-p)
-;(get-unique))
-;(get-answer))
-    ;(get-p))
